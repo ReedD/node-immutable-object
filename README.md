@@ -103,3 +103,7 @@ console.log(immutable.hast('nested.notset'));
 // -> false
 
 ```
+
+##Known Issues
+Custom objects are not immutably cloned because it is not safe to do so. Immutability only works
+on for the following types: `String`, `Boolean`, `Object`, `Number`, `Array`, `Date`, `RegExp`.
