@@ -1,0 +1,39 @@
+{
+  "name": "immutable-object",
+  "version": "1.0.0",
+  "description": "Immutable JavaScript objects.",
+  "main": "index.js",
+  "scripts": {
+    "show-coverage": "open coverage/lcov-report/*.html",
+    "coverage": "NODE_ENV=test ./node_modules/.bin/istanbul cover _mocha -- --require test/config.js --reporter spec 'test/*.js'",
+    "test": "NODE_ENV=test mocha --require test/config.js  --reporter spec 'test/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReedD/node-immutable-object.git"
+  },
+  "keywords": [
+    "immutable",
+    "object"
+  ],
+  "author": "Reed Dadoune <reed@dadoune.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ReedD/node-immutable-object/issues"
+  },
+  "homepage": "https://github.com/ReedD/node-immutable-object#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.2",
+    "istanbul": "^0.4.5",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1",
+    "mocha": "^3.1.2",
+    "sinon": "^1.17.6",
+    "sinon-chai": "^2.8.0"
+  },
+  "dependencies": {
+    "lodash": "^4.16.6"
+  }
+}

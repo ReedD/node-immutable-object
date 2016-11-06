@@ -1,0 +1,5 @@
+coverage
+tests
+node_modules
+.jshintrc
+gulpfile.js
