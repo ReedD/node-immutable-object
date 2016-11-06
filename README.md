@@ -28,9 +28,9 @@ To create an imobject, simply require the npm package and cast your standard Jav
 objects into imobjects.
 
 ```
-const imobject = require('imobject');
+const IMObject = require('imobject');
 
-var immutable = new imobject({
+var immutable = new IMObject({
 	foo: 'bar',
 	nested: {
 		foo: 'baz'
@@ -60,9 +60,9 @@ immutable.newprop = 'newvalue'
 path requested is not set.
 
 ```
-const imobject = require('imobject');
+const IMObject = require('imobject');
 
-var immutable = new imobject({
+var immutable = new IMObject({
 	foo: 'bar',
 	nested: {
 		foo: 'baz'
@@ -84,9 +84,9 @@ console.log(immutable.get('nested.notset', 'defaultvalue'));
 `has` returns a boolean value indicating whether or not a given path is set.
 
 ```
-const imobject = require('imobject');
+const IMObject = require('imobject');
 
-var immutable = new imobject({
+var immutable = new IMObject({
 	foo: 'bar',
 	nested: {
 		foo: 'baz'
