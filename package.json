@@ -1,6 +1,6 @@
 {
   "name": "imobject",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Immutable JavaScript objects.",
   "main": "index.js",
   "scripts": {
