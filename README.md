@@ -1,36 +1,36 @@
-[![NPM](https://nodei.co/npm/immutableobject.png?downloads=true)](https://nodei.co/npm/immutableobject/)
+[![NPM](https://nodei.co/npm/imobject.png?downloads=true)](https://nodei.co/npm/imobject/)
 
-node-immutableobject
+node-immutable-object
 =================
 
-ImmutableObject allows you to create deep immutable JavaScript objects. Once the properties are set
+imobject allows you to create deep immutable JavaScript objects. Once the properties are set
 additional properties can't be added and the initial properties cannot be modified.
 
 
 ##Installation
-To use [immutableobject](https://www.npmjs.org/package/immutableobject), cd into your
-project directory and install immutableobject with `npm` or `yarn`.
+To use [imobject](https://www.npmjs.org/package/imobject), cd into your
+project directory and install imobject with `npm` or `yarn`.
 
 **npm**
 ```
 $ cd /to/project/directory
-$ npm install immutableobject --save
+$ npm install imobject --save
 ```
 
 **yarn**
 ```
 $ cd /to/project/directory
-$ yarn add immutableobject
+$ yarn add imobject
 ```
 
 ##Usage
-To create an ImmutableObject, simply require the npm package and cast your standard JavaScript
-objects into ImmutableObjects.
+To create an imobject, simply require the npm package and cast your standard JavaScript
+objects into imobjects.
 
 ```
-const ImmutableObject = require('immutableobject');
+const imobject = require('imobject');
 
-var immutable = new ImmutableObject({
+var immutable = new imobject({
 	foo: 'bar',
 	nested: {
 		foo: 'baz'
@@ -60,9 +60,9 @@ immutable.newprop = 'newvalue'
 path requested is not set.
 
 ```
-const ImmutableObject = require('immutableobject');
+const imobject = require('imobject');
 
-var immutable = new ImmutableObject({
+var immutable = new imobject({
 	foo: 'bar',
 	nested: {
 		foo: 'baz'
@@ -84,9 +84,9 @@ console.log(immutable.get('nested.notset', 'defaultvalue'));
 `has` returns a boolean value indicating whether or not a given path is set.
 
 ```
-const ImmutableObject = require('immutableobject');
+const imobject = require('imobject');
 
-var immutable = new ImmutableObject({
+var immutable = new imobject({
 	foo: 'bar',
 	nested: {
 		foo: 'baz'
