@@ -1,6 +1,6 @@
-[![NPM](https://nodei.co/npm/immutable-object.png?downloads=true)](https://nodei.co/npm/immutable-object/)
+[![NPM](https://nodei.co/npm/immutableobject.png?downloads=true)](https://nodei.co/npm/immutableobject/)
 
-node-immutable-object
+node-immutableobject
 =================
 
 ImmutableObject allows you to create deep immutable JavaScript objects. Once the properties are set
@@ -8,19 +8,19 @@ additional properties can't be added and the initial properties cannot be modifi
 
 
 ##Installation
-To use [immutable-object](https://www.npmjs.org/package/immutable-object), cd into your
-project directory and install immutable-object with `npm` or `yarn`.
+To use [immutableobject](https://www.npmjs.org/package/immutableobject), cd into your
+project directory and install immutableobject with `npm` or `yarn`.
 
 **npm**
 ```
 $ cd /to/project/directory
-$ npm install immutable-object --save
+$ npm install immutableobject --save
 ```
 
 **yarn**
 ```
 $ cd /to/project/directory
-$ yarn add immutable-object
+$ yarn add immutableobject
 ```
 
 ##Usage
@@ -28,7 +28,7 @@ To create an ImmutableObject, simply require the npm package and cast your stand
 objects into ImmutableObjects.
 
 ```
-const ImmutableObject = require('immutable-object');
+const ImmutableObject = require('immutableobject');
 
 var immutable = new ImmutableObject({
 	foo: 'bar',
@@ -60,7 +60,7 @@ immutable.newprop = 'newvalue'
 path requested is not set.
 
 ```
-const ImmutableObject = require('immutable-object');
+const ImmutableObject = require('immutableobject');
 
 var immutable = new ImmutableObject({
 	foo: 'bar',
@@ -84,7 +84,7 @@ console.log(immutable.get('nested.notset', 'defaultvalue'));
 `has` returns a boolean value indicating whether or not a given path is set.
 
 ```
-const ImmutableObject = require('immutable-object');
+const ImmutableObject = require('immutableobject');
 
 var immutable = new ImmutableObject({
 	foo: 'bar',

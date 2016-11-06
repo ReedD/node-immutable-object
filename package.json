@@ -1,5 +1,5 @@
 {
-  "name": "immutable-object",
+  "name": "immutableobject",
   "version": "1.0.0",
   "description": "Immutable JavaScript objects.",
   "main": "index.js",
