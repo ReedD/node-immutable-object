@@ -22,7 +22,9 @@ const ImmutableObject = (function () {
 			_.each(keys, key => {
 				Object.defineProperty(this, key, {
 					get: function () {
-						if (_.isObject(data[key])) {
+						// We already have the cloned data so only make
+						// standard `Object`s and `Array`s immutable
+						if (_.isPlainObject(data[key]) || _.isArray(data[key])) {
 							return new ImmutableObject(data[key]);
 						}
 						return data[key];
